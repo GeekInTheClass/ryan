@@ -1,0 +1,22 @@
+let numArr1 = [1, 2, 3, 4, 6, 8, 34, 13, 33, 66, 66666, 789]
+var retArr1: [Int] = []
+var ret1: Int = 0
+
+for i in 0..<numArr1.count{
+    for j in 0...i{
+        ret1 += numArr1[j]
+    }
+    retArr1[i] = ret1
+}
+print(retArr1)
+
+
+let numArr2 = [1, 2, 3, 4, 6, 8, 34, 13, 33, 66, 66666, 789]
+var ret2: Int = 0
+for i in 0..<numArr2.count{
+    if numArr2[i] % 3 == 0{
+        ret2 += numArr2[i]
+    }
+    
+}
+print(ret2)
